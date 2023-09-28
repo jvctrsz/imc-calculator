@@ -2,6 +2,7 @@ function calcular() {
   let peso = document.getElementById("peso").value;
   let altura = document.getElementById("altura").value;
   let resultado = document.getElementById("resultado");
+  
   let calculo = peso / ((altura * altura) / 10000);
   resultado.style.cssText = `
             background-color: #8ae287;
@@ -11,6 +12,7 @@ function calcular() {
 
   if (peso == "" && altura == "") {
     resultado.innerHTML = ``;
+    resultado.style.cssText = `background-color: #fff;`
   } else if (calculo < 18.5) {
     resultado.innerHTML = `O seu imc é de ${calculo.toFixed(1)} Kg/m2. Seu peso esta abaixo do ideal, procure um profissional da área.`;
   } else if (calculo > 18.4 && calculo < 24.9) {
