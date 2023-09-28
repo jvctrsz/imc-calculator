@@ -8,6 +8,7 @@ function calcular() {
             background-color: #8ae287;
             padding: 10px;
             border-radius: 10px;
+            max-width: 300px;
             `;
 
   if (peso == "" && altura == "") {
