@@ -54,6 +54,10 @@ button{
     color: #Fff;
 }
 
+#resultado{
+    max-width: 300px;
+}
+
 .table-inf{
     display: flex;
     justify-content: center;
